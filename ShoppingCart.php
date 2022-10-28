@@ -21,7 +21,11 @@ class ShoppingCart
         }
     }
     
-    public function getid(){
+    public function getid(){   
+    }
+    
+    public function __toString()
+    {
         
     }
     
