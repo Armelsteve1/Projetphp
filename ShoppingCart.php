@@ -10,29 +10,30 @@ class ShoppingCart
       }
 
 
-      public function addItem($item){
+    public function addItem($item){
         $weight = $item->getWeight();
         if ($weight < 10000 ){
           $this->items[] = $item;
         } else {
           echo '<br>';
-          echo "Item must weight less than 10kg";
+          echo "L'article doit peser moins de 10kg";
           echo '<br>';
         }
-      }
+    }
+    
+    public function getid(){
+        
+    }
+    
+    public function removeitem(){
 
-    // public function additem(){
+    }
+    public function itemcount(){
 
-    // }
-    // public function removeitem(){
+    }
+    public function totalprice(){
 
-    // }
-    // public function itemcount(){
-
-    // }
-    // public function totalprice(){
-
-    // }
+    }
 
 
 }
