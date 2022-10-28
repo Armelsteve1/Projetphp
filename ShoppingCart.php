@@ -3,11 +3,16 @@ class ShoppingCart  extends Item
 {
 
     private $items = array();
-      private $id;
+    private $id =1;
+    private $weight;
 
-      public function __construct(){
-          $this->id = uniqid();
-      }
+
+    function  __construct ($name ,$price, $weight, $id){
+        parent::__construct($name,$price);
+        $this->id = $id;
+        $this->weight = $weight;
+    }
+
 
 
     public function addItem($item){
@@ -21,24 +26,13 @@ class ShoppingCart  extends Item
         }
     }
     
-    public function getid(){   
+    public function getid(){  
+       return uniqid($id) ;
     }
 
     public function __toString()
     {
-        
-    }
-    
-    public function removeitem(){
-
-    }
-    public function itemcount(){
-
-    }
-    public function totalprice(){
-
-    }
-
-
+        return $this ->id =$id . " " . this ->weight =$weight;
+    } 
 }
 ?>
