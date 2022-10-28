@@ -1,5 +1,5 @@
 <?php
-class ShoppingCart 
+class ShoppingCart  extends Item
 {
 
     private $items = array();
@@ -23,7 +23,7 @@ class ShoppingCart
     
     public function getid(){   
     }
-    
+
     public function __toString()
     {
         
