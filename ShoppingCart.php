@@ -33,7 +33,6 @@ class ShoppingCart  extends Item
     public function __toString()
     {
         return $this ->id =$id . " " . this ->weight =$weight;
-    }
-    
+    } 
 }
 ?>
